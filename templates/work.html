@@ -1,0 +1,230 @@
+<html class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Crime Predictor</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<style>
+	
+			*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: "Open Sans", sans-serif;;
+	}
+	body{
+		background: url(https://cdn.wallpapersafari.com/82/25/HrmkBo.jpg);
+		background-size: cover;
+        
+		height: 360vh;
+		background-position: center;
+	}
+	header{
+		width:100%;
+		height: 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: fixed;
+		z-index: 99;
+		background: transparent;
+	}
+	header .logo{
+		flex: 1;
+		color:White;
+	
+		margin-left: 50px;
+		text-transform: uppercase;
+		font-size: 15px;
+	}
+	
+	header .logo :hover{
+		color:yellow;
+	}
+	
+	header ul {
+		flex:1;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	header ul li{
+		list-style: none;
+	}
+	header ul li a{
+		text-decoration: none;
+		color:yellow;
+		font-weight: 600;
+		text-transform: uppercase;
+		padding: 5px 5px;
+	}
+	header ul li a:hover{
+		color:red;
+	}
+	header .menu{
+		font-size: 2.5em;
+		display: none;
+	}
+	@media(max-width:1000px){
+		header ul{
+			position: fixed;
+			top:100px;
+			right: -100%;
+			background: rgba(0,0,0,0.5);
+			height: calc(100vh - 100px);
+			width:50%;
+			flex-direction: column;
+			align-items: center;
+			transition: right 0.5s linear;
+		}
+	
+	}
+	
+		* {
+	  margin: 0;
+	  padding: 0;
+	  box-sizing: border-box;
+	}
+	
+	.container{
+	  display: flex;
+	  justify-content: center;
+	  align-items:center !important;
+	  height: 70vh;
+	}
+	.form{
+	  width: 350px;
+	  height: 350px;
+	  background-color: rgba(41, 39, 39, 0.3);
+	  box-shadow: 0 80px 80px black;
+	}
+	.btn button {
+	  padding: 3px;
+	  margin: 20px 0px 30px 20px;
+	  border-style: none;
+	  background-color: transparent;
+	  color: beige;
+	  font-size: 18px;
+	  font-weight: 550;
+	}
+	.formGroup{
+	  display: flex;
+	  justify-content: center;
+	}
+	.formGroup input{
+	  border: none;
+	  width: 80%;
+	  border-bottom: 2px solid white;
+	  padding: 10px;
+	  margin-bottom: 20px;
+	  font-size: 14px;
+	  font-weight: bold;
+	  background-color: transparent;
+	  color: white;
+	}
+	input:focus {
+	  outline: none !important;
+	  border-bottom: 2px solid rgb(91, 243, 131);
+	  font-size: 17px;
+	  font-weight: bold;
+	  color: white;
+	}
+	::placeholder {
+	  color: white;
+	}
+	
+	.text{
+	  color: rgb(199, 197, 197);
+	  font-size: 13px;
+	}
+	.btn2{
+	  padding: 10px;
+	  width: 100px;
+	  border-radius: 20px;
+	  background-color: rgb(10, 136, 43);
+	  border-style: none;
+	  color: white;
+	  font-weight: 600;
+	}
+	.btn2:hover{
+	  background-color: rgba(10, 136, 43, 0.5);
+	}
+	.btn button:hover{
+	  border-bottom: 2px solid rgb(91, 243, 131);
+	}
+	
+		</style>
+	</head>
+	<body > <!--changed-->
+		<header>
+			<div class="logo" href="index.html"><h1>Crime Analysis</h1></div>
+				<ul>
+					<li><a href="index.html" class="active" >Predict Crime</a></li>
+					<li><a href="work.html" >Crime Analysis</a></li>
+					<li><a href="about.html" >About Us</a></li>
+					<li><a href="contact.html" >Contact</a></li>
+				</ul>
+			
+		
+	</header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+    <div align="center">
+        <h3 style="color:white;">Analysis Wall</h3><br>
+        <h2 style="color:white;">Visualization</h2>
+                        
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        
+                        <div class="gallery">
+                            <div>
+                                <div class="image fit">
+                                    <a href="#"><img src="/static/images/crime_density1.jpeg" alt="" /></a>
+                                    <br><br>
+                                    <p style="color:white;">Crime density</p>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="image fit">
+                                    <a href="#"><img src="/static/images/hour_vs_theft.png" alt="" /></a>
+                                    <br><br>
+                                    <p style="color:white;">hours vs robbery</p>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="image fit">
+                                    <a href="#"><img src="/static/images/hexbinofviolence.png" alt="" /></a>
+                                    <br><br>
+                                    <p style="color:white;">hexbin of kidnap</p>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="image fit">
+                                    <a href="#"><img src="/static/images/hexbinofmurder.png" alt="" /></a>
+                                    <br><br>
+                                    <p style="color:white;">hexbin of murder </p>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="image fit">
+                                    <a href="#"><img src="/static/images/hexbinofrashdriving.png" alt="" /></a>
+                                    <br><br>
+                                    <p style="color:white;">hexbin of assault </p>
+                                    <br><br>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            </div>
